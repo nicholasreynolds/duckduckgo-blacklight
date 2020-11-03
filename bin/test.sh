@@ -1,0 +1,1 @@
+elm-test ../tests/MainTest.elm
