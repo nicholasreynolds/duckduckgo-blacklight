@@ -1,0 +1,38 @@
+{
+
+  "manifest_version": 2,
+  "name": "DuckDuckGo Blacklight",
+  "version": "1.0.0",
+
+  "description": "Inserts an expandable menu next to each search result item showing the trackers and other info present on the site.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "background": {
+    "scripts": ["background.min.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://duckduckgo.com/*"],
+      "js": ["blacklight.min.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "options_page": "options.html",
+
+  "permissions": ["storage", "<all_urls>"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "blacklight@black.light"
+    }
+  }
+
+}

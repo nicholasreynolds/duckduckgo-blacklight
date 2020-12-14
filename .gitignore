@@ -1,4 +1,11 @@
+.idea
+.gradle
+bin
+build
+gradle-*
+!gradle
+elm-stuff
 node_modules
 planning
-.idea
-elm-stuff
+
+src/js/config.js
